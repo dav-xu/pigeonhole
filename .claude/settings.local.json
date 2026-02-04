@@ -1,7 +1,11 @@
 {
   "permissions": {
     "allow": [
-      "Bash(git remote add origin git@github.com:dav-xu/pigeonhole.git)"
+      "Bash(git remote add origin git@github.com:dav-xu/pigeonhole.git)",
+      "Bash(cd:*)",
+      "Bash(gh issue comment 1 --body \"$\\(cat <<''EOF''\n## Approach\n\n**Hypothesis**: \"Pigeonholing\" — correlated signals across firms may produce right-skewed offer count distributions for certain groups, even under equal average offer rates. We look for evidence of this in the NYFED SCE job search supplement using `js19` \\(offers received in last 4 weeks\\).\n\n**Sample restriction**: Filter to active job searchers \\(responded yes to L5/L6\\) or those who received at least one offer. This ensures we compare like-for-like rather than mixing searchers with non-searchers.\n\n**Subgroup strategy**: To make apples-to-apples comparisons, we condition on observables before comparing offer distributions by gender. We first run a sample size analysis across candidate subgroup definitions \\(education × gender, education × region × gender, education × industry × gender\\) to determine which stratifications maintain adequate cell sizes \\(n ≥ ~20–30\\). This analysis will be saved as a CSV table for documentation.\n\n**Proof-of-concept plots** \\(men vs. women overlaid histograms of offer counts\\):\n1. Faceted by education \\(rows\\) × region \\(columns\\)\n2. Faceted by education \\(rows\\) × industry \\(columns\\), with industry collapsed to ~5–6 macro sectors\n\n**Output**: Subgroup sample size table \\(CSV\\) + two PDF figures saved to `/figures/`.\n\n**Code**: Single R script at `/code/explore_nyfed.R`, tidyverse style.\nEOF\n\\)\")",
+      "Bash(pdfinfo:*)",
+      "Bash(Rscript:*)"
     ]
   }
 }

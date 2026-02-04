@@ -1,0 +1,45 @@
+facet,subgroup,Men,Women
+edu_x_gender,HS or less,82,119
+edu_x_gender,Some college / Assoc.,237,342
+edu_x_gender,Bachelor's,345,359
+edu_x_gender,Graduate+,214,264
+edu_x_region,HS or less | region_midwest,21,20
+edu_x_region,HS or less | region_northeast,21,28
+edu_x_region,HS or less | region_south,26,53
+edu_x_region,HS or less | region_west,14,18
+edu_x_region,Some college / Assoc. | region_midwest,54,94
+edu_x_region,Some college / Assoc. | region_northeast,47,50
+edu_x_region,Some college / Assoc. | region_south,74,125
+edu_x_region,Some college / Assoc. | region_west,62,73
+edu_x_region,Bachelor's | region_midwest,76,78
+edu_x_region,Bachelor's | region_northeast,71,83
+edu_x_region,Bachelor's | region_south,122,111
+edu_x_region,Bachelor's | region_west,76,87
+edu_x_region,Graduate+ | region_midwest,40,55
+edu_x_region,Graduate+ | region_northeast,54,65
+edu_x_region,Graduate+ | region_south,61,87
+edu_x_region,Graduate+ | region_west,59,57
+edu_x_industry,HS or less | Education / Health,4,20
+edu_x_industry,HS or less | Finance / Prof. Services,9,9
+edu_x_industry,HS or less | Leisure / Other Services,13,14
+edu_x_industry,HS or less | Manufacturing,6,2
+edu_x_industry,HS or less | Primary / Construction,3,4
+edu_x_industry,HS or less | Trade / Transport,12,14
+edu_x_industry,Some college / Assoc. | Education / Health,16,55
+edu_x_industry,Some college / Assoc. | Finance / Prof. Services,32,46
+edu_x_industry,Some college / Assoc. | Leisure / Other Services,30,43
+edu_x_industry,Some college / Assoc. | Manufacturing,14,12
+edu_x_industry,Some college / Assoc. | Primary / Construction,12,9
+edu_x_industry,Some college / Assoc. | Trade / Transport,40,36
+edu_x_industry,Bachelor's | Education / Health,31,81
+edu_x_industry,Bachelor's | Finance / Prof. Services,79,59
+edu_x_industry,Bachelor's | Leisure / Other Services,40,31
+edu_x_industry,Bachelor's | Manufacturing,22,12
+edu_x_industry,Bachelor's | Primary / Construction,10,7
+edu_x_industry,Bachelor's | Trade / Transport,38,32
+edu_x_industry,Graduate+ | Education / Health,44,69
+edu_x_industry,Graduate+ | Finance / Prof. Services,41,39
+edu_x_industry,Graduate+ | Leisure / Other Services,15,19
+edu_x_industry,Graduate+ | Manufacturing,5,2
+edu_x_industry,Graduate+ | Primary / Construction,6,3
+edu_x_industry,Graduate+ | Trade / Transport,11,4
