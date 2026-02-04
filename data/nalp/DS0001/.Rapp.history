@@ -1,0 +1,2 @@
+load("/Users/davidxu/Desktop/Classwork/2025-26/winter/labor 2/Research Proposal/data/nalp/DS0001/26302-0001-Data.rda")
+glimpse(rda)

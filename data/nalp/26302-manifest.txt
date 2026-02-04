@@ -1,0 +1,64 @@
+File Manifest for ICPSR 26302
+
+Garth, Bryant G., Joyce Sterling, and Richard Sander. After the JD - Wave
+1: A Longitudinal Study of Legal Careers in Transition Data Collection: May
+2002-May 2003, United States. ICPSR26302-v2. Ann Arbor, MI: Inter-
+university Consortium for Political and Social Research [distributor],
+2013-08-13. http://doi.org/10.3886/ICPSR26302.v2
+
+Details on the version history can be found below the file listings.
+
+
+Study-level Documentation
+
+    Filename                            Record  Record    Var.    Date        MD5
+                                        Length  Count     Count   Updated     Checksum
+
+    26302-descriptioncitation.pdf       -       -         -       2021-01-20  -
+
+    26302-related_literature.txt        -       -         -       daily       -
+
+    26302-manifest.txt                  -       -         -       daily       -
+
+
+DS0001 After the JD - Wave 1: A Longitudinal Study of Legal Careers in
+Transition Data Collection: May 2002-May 2003, United States
+
+    Filename                            Record  Record    Var.    Date        MD5
+                                        Length  Count     Count   Updated     Checksum
+
+    26302-0001-Codebook.pdf             -       -         -       2013-08-13  bdb4cd6b49545f0a4f7d847fed5f2930
+
+    26302-0001-Data.dta                 -       4,538     556     2013-08-13  dd30db692573cb0cbc43c73f78248d2c
+
+    26302-0001-Data.rda                 -       4,538     556     2013-08-13  df0d3e8887caf7de47dfbb92679644f0
+
+    26302-0001-Data.sav                 -       4,538     556     2013-08-13  f5e5ccbc2a9eddb4d6d37b970a367f86
+
+    26302-0001-Data.stc                 -       4,538     556     2013-08-13  5c9d401db0edfb4286f31f2218f9a6e6
+
+    26302-0001-Data.tsv                 -       4,538     556     2013-08-13  a0b92d37ec2ff1ff5ee6bd6de4db635f
+
+    26302-0001-Data.txt                 5382    4,538     556     2013-08-13  32ad3eb8878468f507d8eb6a150a57a6
+
+    26302-0001-Setup.dct                -       -         -       2013-08-13  63a2104248c4531030a1bf01c47a2230
+
+    26302-0001-Setup.do                 -       -         -       2013-08-13  7bc8a5188e6f81adf6ee34a3f6f1e897
+
+    26302-0001-Setup.sas                -       -         -       2013-08-13  379774f7833d7c36a2a39b344ab6b2ad
+
+    26302-0001-Setup.sps                -       -         -       2013-08-13  a3d890dbc9172db9848bfee6c4e23871
+
+    26302-0001-Supplemental_syntax.do   -       -         -       2013-08-13  2d8a6d7c4476dcb73c69c91aaaf54c1f
+
+    26302-0001-Supplemental_syntax.sas  -       -         -       2013-08-13  9a1ee2c883746498fb0117690df0405a
+
+    26302-0001-User_guide.pdf           -       -         -       2013-08-13  a838447b22e04e0e8de8d83902202a00
+
+
+Version History
+
+2013-08-13 This data collection has been updated with an ID variable
+(ASU_ID) that can be used to link the 1st and 2nd wave data. A number of
+small changes are also being made to correct for typos and to standardize
+the series.
