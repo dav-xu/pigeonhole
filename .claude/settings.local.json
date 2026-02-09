@@ -7,7 +7,9 @@
       "Bash(pdfinfo:*)",
       "Bash(Rscript:*)",
       "Bash(gh issue view:*)",
-      "Bash(gh issue comment:*)"
+      "Bash(gh issue comment:*)",
+      "Bash(git -C \"/Users/davidxu/Desktop/Classwork/2025-26/winter/labor 2/Research Proposal\" remote -v)",
+      "Bash(ls:*)"
     ]
   }
 }

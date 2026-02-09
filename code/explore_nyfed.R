@@ -33,20 +33,28 @@ raw_data <- read_xlsx("data/nyfed_sce/sce_13_21.xlsx", sheet = "Data") %>%
 # Select relevant variables with readable names
 data <- raw_data %>%
     select(
-        offers       = js19_offers_last4wks,
-        weight       = survey_weight,
-        male         = male,
-        education    = education,
-        region       = current_region,
-        hh_income    = hh_income,
-        race         = race,
-        hispanic     = hispanic,
-        industry     = ec1f_cps_job_industry_rc,
-        looked_ne    = l5_ne_looked_for_work,
-        looked_emp   = l6_emp_looked_for_work,
-        search_days  = l7_days_spent_searching,
-        offers_any   = js18_offers_any
-    )
+        year,
+        offers = js19_offers_last4wks,
+        weight = survey_weight,
+        male = male,
+        education = education,
+        region = current_region,
+        hh_income = hh_income,
+        race = race,
+        hispanic = hispanic,
+        industry_current = ec1f_cps_job_industry_rc,
+        industry_recent = el4a_last_job_industry_rc,
+        emp_status_2014plus = l1a_lfs_rc,
+        emp_status_2013 = l1_lfs_rc,
+        looked_ne = l5_ne_looked_for_work,
+        looked_emp = l6_emp_looked_for_work,
+        search_days = l7_days_spent_searching,
+        offers_any = js18_offers_any
+    ) %>%
+    mutate(industry = ifelse(!is.na(industry_current), industry_current, industry_recent)) %>%
+    mutate(emp_status = ifelse(year >= 2014, emp_status_2014plus, emp_status_2013)) %>%
+    mutate(emp_status = ifelse(emp_status >= 4 & year < 2014, 3, emp_status)) # recode "other" to "unemployed" for pre-2014
+
 
 # ---------- Step 2: Filter to job searchers ----------
 
@@ -76,7 +84,12 @@ searchers <- searchers %>%
             industry %in% c(13, 14) ~ "Education / Health",
             industry %in% c(15, 16, 17, 18) ~ "Leisure / Other Services",
             TRUE ~ NA_character_
-        ))
+        )),
+        emp_status = factor(case_when(
+            emp_status == 1 ~ "Full-time",
+            emp_status == 2 ~ "Part-time",
+            emp_status == 3 ~ "Unemployed"
+        )),
     )
 
 cat("\n=== Job searcher sample ===\n")
@@ -196,6 +209,7 @@ plot_sector <- function(df, sector, filename) {
     p <- plot_data %>%
         ggplot(aes(x = offers, fill = gender, weight = weight)) +
         geom_density(alpha = 0.5, adjust = 1.5) +
+        facet_grid(rows = vars(emp_status)) +
         scale_fill_brewer(palette = "Set2") +
         scale_x_continuous(breaks = seq(0, 15, by = 1)) +
         theme_minimal(base_family = "Palatino") +
