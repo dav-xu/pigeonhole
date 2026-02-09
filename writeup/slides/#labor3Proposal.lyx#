@@ -46,10 +46,9 @@
 
 % Title
 \setbeamercolor{title}{fg=blue!80!black}
-\setbeamerfont{title}{size=\Huge, series=\bfseries}
+\setbeamerfont{title}{size=\Large, series=\bfseries}
 
 % points
-\setbeamertemplate{enumerate item}{\small\raise0.5pt\hbox{$\blacktriangleright$}}
 \setbeamertemplate{itemize item}{\small\raise0.5pt\hbox{$\blacktriangleright$}}
 \setbeamertemplate{itemize subitem}{$\bullet$}
 
@@ -145,7 +144,21 @@
 \begin_body
 
 \begin_layout Title
-Pigeonholing
+Equal Opportunities,
+ Unequal Outcomes:
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+newline
+\end_layout
+
+\end_inset
+
+ Colliding Offers and Discrimination
 \end_layout
 
 \begin_layout Author
@@ -167,7 +180,20 @@ Motivation
 
 \begin_deeper
 \begin_layout Itemize
-this is point 1
+Goal of discrimination research is to achieve equal 
+\series bold
+\color blue
+outcomes
+\series default
+\color inherit
+,
+ but often research focuses on equal 
+\series bold
+\color red
+opportunities
+\series default
+\color inherit
+.
 \begin_inset ERT
 status open
 
@@ -183,13 +209,95 @@ pause
 
 \end_layout
 
+\begin_deeper
 \begin_layout Itemize
-this is point 2
+
+\series bold
+Outcomes 
+\begin_inset Formula $=$
+\end_inset
+
+ opportunities
+\series default
+:
+ judge sentencing,
+ loan approval
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Outcomes 
+\begin_inset Formula $\neq$
+\end_inset
+
+ opportunities
+\series default
+:
+ admissions,
+ job search
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pause
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Key feature:
+ one-to-one matching through decentralized applications/offers
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+If distribution of offers by group is unequal,
+ 
+\series bold
+\color blue
+colliding
+\series default
+ 
+\series bold
+offers
+\series default
+\color inherit
+ can generate unequal outcomes despite equal opportunities.
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pause
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_deeper
 \begin_layout Itemize
-subpoint
+E.g.
+ Even if firms make equal offers to groups A and B,
+ if more offers collide in group B,
+ the outcomes will be unequal.
 \end_layout
 
 \end_deeper
@@ -215,12 +323,52 @@ Overview
 \end_layout
 
 \begin_deeper
-\begin_layout Itemize
-T
-\color red
-his is
-\color blue
- red
+\begin_layout Standard
+
+\series bold
+\color black
+Research Question:
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace -0.25cm
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+What 
+\series bold
+models
+\series default
+ of job search generate colliding offers?
+ 
+\end_layout
+
+\begin_layout Enumerate
+How can colliding offers be 
+\series bold
+measured
+\series default
+ using available data and distinguished from other mechanisms?
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Model
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Measurement
 \end_layout
 
 \end_deeper
@@ -236,7 +384,7 @@ his is
 status open
 
 \begin_layout Plain Layout
-Model
+Contribution
 \end_layout
 
 \end_inset
@@ -247,6 +395,58 @@ Model
 \begin_deeper
 \begin_layout Itemize
 T
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Modeling
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+T
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Measurement
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
 \end_layout
 
 \end_deeper
@@ -306,7 +506,7 @@ College Admissions
 
 \begin_deeper
 \begin_layout Standard
-- NYFED data
+- IPEDS data
 \end_layout
 
 \end_deeper

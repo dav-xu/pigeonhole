@@ -177,8 +177,6 @@ plot_ipeds_shares <- function(df, year_label, label_colleges) {
             guide = guide_legend(override.aes = list(color = "grey40"))
         ) +
         labs(
-            title = "Female share: admissions vs. enrollment",
-            subtitle = paste0("IPEDS ", year_label, ", selective institutions (< 10% admit rate)"),
             x = "Women as % of admitted students",
             y = "Women as % of enrolled students",
             size = "Total applicants"
@@ -196,7 +194,7 @@ ipeds_24 <- load_ipeds("data/ipeds/adm24.csv", "2024")
 ipeds_16 <- load_ipeds("data/ipeds/adm16.csv", "2016")
 
 p24 <- plot_ipeds(ipeds_24, "2024", label_colleges)
-ggsave("figures/ipeds_admit_yield_2024.pdf", p24, width = 14, height = 7)
+ggsave("figures/ipeds_admit_yield_2024.pdf", p24, width = 8, height = 5)
 cat("Saved figures/ipeds_admit_yield_2024.pdf\n")
 
 p16 <- plot_ipeds(ipeds_16, "2016", label_colleges)
@@ -204,7 +202,7 @@ ggsave("figures/ipeds_admit_yield_2016.pdf", p16, width = 14, height = 7)
 cat("Saved figures/ipeds_admit_yield_2016.pdf\n")
 
 s24 <- plot_ipeds_shares(ipeds_24, "2024", label_colleges)
-ggsave("figures/ipeds_shares_2024.pdf", s24, width = 9, height = 7)
+ggsave("figures/ipeds_shares_2024.pdf", s24, width = 8, height = 5)
 cat("Saved figures/ipeds_shares_2024.pdf\n")
 
 s16 <- plot_ipeds_shares(ipeds_16, "2016", label_colleges)
